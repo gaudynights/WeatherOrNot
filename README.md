@@ -1,7 +1,7 @@
 # WeatherOrNot
 https://gaudynights.github.io/WeatherOrNot/
 
-## Weather or Not is a javascript based web application that takes user input of starting location, desired temperature, and travel dates, then returns flight cities and prices matching the user's criteria.
+### Weather or Not is a javascript based web application that takes user input of starting location, desired temperature, and travel dates, then returns flight cities and prices matching the user's criteria.
 
 ## To use:
 * Enter the starting city in North America
