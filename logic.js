@@ -25,7 +25,7 @@ var i = 0;
 var fCount;
 var currentTime = moment().format('YYYY-MM-DD');
 var trendPlace;
-var maxTime = moment(uEndDate).add(16, 'days').format('YYYY-MM-DD');
+var maxTime = moment(currentTime).add(16, 'days').format('YYYY-MM-DD');
 var trendingCount = 0;
 var currentSel = "Dallas/Ft Worth, Texas";
 
@@ -43,10 +43,10 @@ $("#add-user").on("click", function() {
     // console log the user variables
     console.log(origin);
     console.log(uTemp);
-    console.log(uStartDate);
-    console.log(uEndDate);
-    console.log(currentTime);
-    console.log(maxTime);
+    console.log("ustart"+uStartDate);
+    console.log("uEnd"+uEndDate);
+    console.log("current time"+currentTime);
+    console.log("maxTime"+maxTime);
     $("#dates").html("");
     $("#results").html("");
 
@@ -65,7 +65,8 @@ $("#add-user").on("click", function() {
         console.log("too far out");
         $("#invalidEnd").html("<h5>Too Far Out!</h5>");
 
-    } else if ((currentTime == uStartDate) || (uStartDate >= currentTime)) {
+    } 
+    else if ((currentTime == uStartDate) || (uStartDate >= currentTime)) {
 
 
 
@@ -91,9 +92,9 @@ $("#add-user").on("click", function() {
 });
 
 // this is the token for the SABRE API - it expires after a week
-// last updated 12/8 at ~10AM
+// last updated 2/6/18 at ~10AM
 // updateToken func will update it after we learn some more stuff next week
-var fToken = "T1RLAQIljucrG1j3XpIwO6BV6988PJPAthDaqu7kXDgL29xrugLx8ECUAADAutvU7eumJ7MjUeS94vFIObqCVD0q569VXQHkq/PzvtxAFjFEDjbKiMASefOG+NBdC9aX7Za0HaAg2TVR2WoLwuvxPGXHVhFyTEwuRniuim6uwU5js0bFPXDyyVoI9dqvarVcOXvPufb7SP+/LguW08TONDzNre8DWgDVOsBW+Kjn1D+YqBW+ly8NVICoDUDYCH7/CfqcE9jOfWxJFWMXaGnf+8FUdTqb5BD4jsULk/nic8M6+DIgmN2X3rhWmAHS";
+var fToken = "T1RLAQL7GM6Cfng3ERJpkupfnM5HigUGOBDQJUyTN3w/FJi6GQuuOZ5mAADAER3bnwxHEtcchaQLm0mDsY0amHzKHGxpT+bNk3L9FJaTybYx3KJqzxLd9WJOOTWZR4xyNMDS9gnHibVYkHtvYWp59x8DD/pTK4B+m58NOjqeSA8L0KVVDZAtlh28PgVY7fZCPViTS4CZZWN1YvLBslk86XWG0ue4qPcvp3kNIV2Fz+6rPkvPLPinLF4P9VgVi7HS8125hZ3qqfk67DHp9Xon7oLVI986BaXOimwfuYF8rOnb09FXpo1udV0lrwwb";
 
 
 //the function to call the sabre api
@@ -174,6 +175,7 @@ function getTemps() {
 
 
                 var newRow = $(`
+
         <tr>
             <td scope=row class="trending">${wDestination}</td>
             
@@ -283,12 +285,10 @@ database.ref("recentPlace").on('value', function(snapshot) {
     database.ref('resultsPlace').on("child_added", function(snapshot) {
         // if the currently selected place matches previously selected places then it adds a point to the trending count
 
-
         for (var i = 0; i < snapshot.numChildren(); i++) {
             if (tempSel == snapshot.val().trendingP) {
                 trendingCount += 1;
             }
-
 
             if (tempSel != snapshot.val().trendingP) {
 
@@ -303,12 +303,10 @@ database.ref("recentPlace").on('value', function(snapshot) {
     if ((trendingCount > 0)) {
         currentSel = tempSel;
 
-
         database.ref("trendingPl").push({
             place: currentSel,
             count: trendingCount
         });
-
 
     } else {
 
