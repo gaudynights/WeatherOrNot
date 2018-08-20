@@ -92,10 +92,9 @@ $("#add-user").on("click", function() {
 });
 
 // this is the token for the SABRE API - it expires after a week
-// last updated 2/6/18 at ~10AM
+// last updated 8/20/18 at ~5:30PM
 // updateToken func will update it after we learn some more stuff next week
-var fToken = "T1RLAQL7GM6Cfng3ERJpkupfnM5HigUGOBDQJUyTN3w/FJi6GQuuOZ5mAADAER3bnwxHEtcchaQLm0mDsY0amHzKHGxpT+bNk3L9FJaTybYx3KJqzxLd9WJOOTWZR4xyNMDS9gnHibVYkHtvYWp59x8DD/pTK4B+m58NOjqeSA8L0KVVDZAtlh28PgVY7fZCPViTS4CZZWN1YvLBslk86XWG0ue4qPcvp3kNIV2Fz+6rPkvPLPinLF4P9VgVi7HS8125hZ3qqfk67DHp9Xon7oLVI986BaXOimwfuYF8rOnb09FXpo1udV0lrwwb";
-
+var fToken = "T1RLAQIpZflmyy4WIa6uAy8VZXvIlWMV6BBLTHMxQJdyXsOB9TE/VNleAADAY0uT6E5QT5NHBtbKfyLmpgHm3zFk9dgFPGt45kq+56VHmEQEZ/qm/5eXSWDnnPMGeSUfY9l7DK+Zezx34Ythta64CmEl5La+J7yZ/WHl9UBEERUMZh9Rj5hjrzgLmdZ5uIYpkclrUeL1GdmPnc1UC4fIWl/tX9VbPcYsh+ebS3sEqFrZo4eJ9dOgnBPcynVncmQocCYZAKxxjwhR/QqTqxwb9WVAVWvW41Gv9RKItqDEfrE7byla5tmPgfdIUa+k";
 
 //the function to call the sabre api
 function getFlights() {
