@@ -94,7 +94,7 @@ $("#add-user").on("click", function() {
 // this is the token for the SABRE API - it expires after a week
 // last updated 8/20/18 at ~5:30PM
 // updateToken func will update it after we learn some more stuff next week
-var fToken = "T1RLAQIpZflmyy4WIa6uAy8VZXvIlWMV6BBLTHMxQJdyXsOB9TE/VNleAADAY0uT6E5QT5NHBtbKfyLmpgHm3zFk9dgFPGt45kq+56VHmEQEZ/qm/5eXSWDnnPMGeSUfY9l7DK+Zezx34Ythta64CmEl5La+J7yZ/WHl9UBEERUMZh9Rj5hjrzgLmdZ5uIYpkclrUeL1GdmPnc1UC4fIWl/tX9VbPcYsh+ebS3sEqFrZo4eJ9dOgnBPcynVncmQocCYZAKxxjwhR/QqTqxwb9WVAVWvW41Gv9RKItqDEfrE7byla5tmPgfdIUa+k";
+var fToken = "T1RLAQIJcuF7fcKuHdhWvlbMw8lpXi3qURBA7LKnj85F42ID1hvhuC9jAADACstOh4yPzWRV0wItgC7+/SL3EWfeEhzVi/qAr6j9DGwMMWd9hAM39b7l9hYVFq7c0JOn9/T0BO/y5BXGOk9j46wuElihUyxtFl/bXMmXCJnCnfCIzINSkzifdHL22x6yxCDpSh7+npWHriA12a5qSMP6zaaBcRIIcFUXgJL6wC+mYfEKdRHO3QA8FpaPtuCmJpMF0PYVIHdg3YVw/lrldmCrL5l6GKRdOLuzIWEzgqPLp/wuaXDXYQrdEy1dO6lU";
 
 //the function to call the sabre api
 function getFlights() {
