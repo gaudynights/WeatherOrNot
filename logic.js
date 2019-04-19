@@ -94,7 +94,7 @@ $("#add-user").on("click", function() {
 // this is the token for the SABRE API - it expires after a week
 // last updated 2/6/18 at ~10AM
 // updateToken func will update it after we learn some more stuff next week
-var fToken = "T1RLAQL7GM6Cfng3ERJpkupfnM5HigUGOBDQJUyTN3w/FJi6GQuuOZ5mAADAER3bnwxHEtcchaQLm0mDsY0amHzKHGxpT+bNk3L9FJaTybYx3KJqzxLd9WJOOTWZR4xyNMDS9gnHibVYkHtvYWp59x8DD/pTK4B+m58NOjqeSA8L0KVVDZAtlh28PgVY7fZCPViTS4CZZWN1YvLBslk86XWG0ue4qPcvp3kNIV2Fz+6rPkvPLPinLF4P9VgVi7HS8125hZ3qqfk67DHp9Xon7oLVI986BaXOimwfuYF8rOnb09FXpo1udV0lrwwb";
+var fToken = "T1RLAQIJcuF7fcKuHdhWvlbMw8lpXi3qURBA7LKnj85F42ID1hvhuC9jAADACstOh4yPzWRV0wItgC7+/SL3EWfeEhzVi/qAr6j9DGwMMWd9hAM39b7l9hYVFq7c0JOn9/T0BO/y5BXGOk9j46wuElihUyxtFl/bXMmXCJnCnfCIzINSkzifdHL22x6yxCDpSh7+npWHriA12a5qSMP6zaaBcRIIcFUXgJL6wC+mYfEKdRHO3QA8FpaPtuCmJpMF0PYVIHdg3YVw/lrldmCrL5l6GKRdOLuzIWEzgqPLp/wuaXDXYQrdEy1dO6lU";
 
 
 //the function to call the sabre api
