@@ -33,6 +33,10 @@ border-style: dotted;*/
 
 }
 
+#gh-logo {
+  height:20px
+}
+
 #linkStyle {
   text-decoration: none;
 }
@@ -147,3 +151,4 @@ font-size: 24px;
 }
 
 
+}
