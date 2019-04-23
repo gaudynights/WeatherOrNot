@@ -1,3 +1,6 @@
+$( document ).ready(function() {
+    alert( "Unfortunately SABRE has deprecated the REST API used in this web application. Feel free to visit the github link in the footer to view the application's code." );
+});
 // firebase access
 var config = {
     apiKey: "AIzaSyDs0DhM5MNy7Ztge5tqW17NH6ipbgsyCHI",
